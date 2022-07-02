@@ -13,6 +13,6 @@ uniform("uni.dat", 1000000);
 gaussian("gau.dat", 1000000);
 
 //Mean of uniform
-printf("%lf",mean("uni.dat"));
+//printf("%lf",mean("uni.dat"));
 return 0;
 }
