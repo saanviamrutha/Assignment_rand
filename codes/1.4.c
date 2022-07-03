@@ -53,8 +53,8 @@ int  main(void) //main function begins
 //gaussian("gau.dat", 1000000);
 
 //Mean of uniform
-printf("%lf \n",mean("uni.dat"));
+printf("mean=%lf \n",mean("uni.dat"));
 //Variance of uniform
-printf("%lf \n",var("uni.dat"));
+printf("variance=%lf \n",var("uni.dat"));
 return 0;
 }
