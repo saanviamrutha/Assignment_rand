@@ -3,8 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy
 #if using termux
-import subprocess
-import shlex
+#import subprocess
+#import shlex
 #end if
 
 
