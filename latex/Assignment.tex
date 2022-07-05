@@ -288,12 +288,12 @@ F_{U}(x) = \pr{U \le x}
 \\
 \solution  The following code plots Fig. \ref{fig:uni_cdf}
 \begin{lstlisting}
-wget https://github.com/saanviamrutha/Assignment_rand/blob/main/codes/1.2.py
-python3 1.2.py
+wget https://github.com/saanviamrutha/Assignment_rand/blob/main/codes/1_2.py
+python3 1_2.py
 \end{lstlisting}
 \begin{figure}
 \centering
-\includegraphics[width=\columnwidth]{./figures/cdf.png}
+\includegraphics[width=\columnwidth]{./figures/cdf_U.png}
 \caption{The CDF of $U$}
 \label{fig:uni_cdf}
 \end{figure}
@@ -422,12 +422,12 @@ Load gau.dat in python and plot the empirical CDF of $X$ using the samples in ga
 \\
 \solution The following code plots Fig. \ref{fig:gauss_cdf}
 \begin{lstlisting}
- wget https://github.com/saanviamrutha/Assignment_rand/blob/main/codes/2.2.py
- python3 2.2.py
+ wget https://github.com/saanviamrutha/Assignment_rand/blob/main/codes/2_2.py
+ python3 2_2.py
 \end{lstlisting}
 \begin{figure}
 \centering
-\includegraphics[width=\columnwidth]{figures/cdf2.png}
+\includegraphics[width=\columnwidth]{figures/cdf_X.png}
 \caption{The CDF of $X$}
 \label{fig:gauss_cdf}
 \end{figure}
@@ -481,7 +481,8 @@ $\because x\exp\brak{-\frac{x^2}{2}}$\text{is an odd function.}
 \end{align}
 Integrating by parts
 \begin{multline}
-    E\sbrak{X^2} &=\frac{1}{\sqrt{2\pi}}{x\int x\exp\brak{-\frac{-x^2}{2}}-\int \frac{d\brak{x}}{~\mathrm{d}x}\int x\exp\brak{-\frac{-x^2}{2}}}
+    E\sbrak{X^2} &=\frac{1}{\sqrt{2\pi}}\brak{{x\int x\exp\brak{-\frac{-x^2}{2}}-\int \frac{d\brak{x}}{~\mathrm{d}x}
+    &\int x\exp\brak{-\frac{-x^2}{2}}}}
 \end{multline}
  \begin{align}
   E\sbrak{X^2} &= \frac{\brak{\brak{-x\exp\brak{-\frac{x^2}{2}}}_{-\infty}^{\infty}+\int_{-\infty}^{\infty}\exp\brak{-\frac{x^2}{2}}}}{\sqrt{2\pi}}\\
@@ -511,12 +512,12 @@ python3 v.py
 \end{lstlisting}
 The following code plots the CDF of V Fig.\ref{fig:v_cdf} using the samples generated above.
 \begin{lstlisting}
-wget https://github.com/saanviamrutha/Assignment_rand/blob/main/codes/3.1_cdf.py
-python3 3.1_cdf.py
+wget https://github.com/saanviamrutha/Assignment_rand/blob/main/codes/3_1_cdf.py
+python3 3_1_cdf.py
 \end{lstlisting}
 \begin{figure}
 \centering
-\includegraphics[width=\columnwidth]{figures/v_cdf.png}
+\includegraphics[width=\columnwidth]{figures/3_1.png}
 \caption{The CDF of $V$}
 \label{fig:v_cdf}
 \end{figure}
